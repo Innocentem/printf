@@ -1,4 +1,4 @@
-include main.h
+#include "main.h"
 /**
 *ptcr: prints character
 *@c : character to be printed

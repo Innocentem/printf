@@ -15,5 +15,23 @@ for (a = 0; format[a] !='\0', a++);
         {
         ptcr (format[a]);
         }
+	else if (format[a + 1] == 'c')
+	{
+		ptcr (va_arg(args, int));
+		a++;
+
+		if  (format[a+1] = 's')
+		{
+			strnct = ptx (va_arg(args, char *))
+				a++;
+			count +=(strnct -1);
+		}
+		else if (format[a + 1] == '%')
+		{
+			ptcr('%');
+		}
+			count += 1;
 }
+	va_end (args);
+	return (count);
 }

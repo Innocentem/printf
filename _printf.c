@@ -8,8 +8,8 @@ int _printf(const char, *format, ...)
 {
 unsigned int a; count = 0; strnct;
 va_list args;
-va_start (args, format);
-for (a = 0; format[a] !='\0', a++)
+va_start(args, format);
+for (a = 0; format[a] !='\0' a++)
 {
         if (format[a] != '%')
         {
@@ -17,7 +17,7 @@ for (a = 0; format[a] !='\0', a++)
         }
 	else if (format[a + 1] == 'c')
 	{
-		ptcr (va_arg(args, int));
+		ptcr(va_arg(args, int));
 		a++;
 
 		if  (format[a+1] = 's')
@@ -32,6 +32,6 @@ for (a = 0; format[a] !='\0', a++)
 		}
 			count += 1;
 }
-	va_end (args);
+	va_end(args);
 	return (count);
 }

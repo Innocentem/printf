@@ -5,7 +5,7 @@
 *Returns: 1
 */
 
-int ptcr (char c)
+int ptcr(char c)
 {
 	Return (write(1, &c, 1));
 }

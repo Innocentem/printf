@@ -4,12 +4,17 @@
  * @format: formart specifier this one.
  * Return: No. of bytes
  */
-int _printf(const char, *format, ...)
+int _printf(const char *format, ...)
 {
 unsigned int a; count = 0; strnct;
 va_list args;
+<<<<<<< HEAD
 va_start(args, format);
 for (a = 0; format[a] !='\0' a++)
+=======
+va_start (args, format);
+for (a = 0; format[a] !='\0', a++);
+>>>>>>> ae5a8eb16407a7906b22bf4c8ec921f2169ccfaf
 {
         if (format[a] != '%')
         {

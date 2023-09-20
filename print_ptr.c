@@ -42,7 +42,7 @@ int print_pointer(va_list types, char buffer[],
 		extra_c = '+', length++;
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
-		ind++;
+	ind++;
 
 	return (write_pointer(buffer, ind, length,
 		width, flags, padd, extra_c, padd_start));

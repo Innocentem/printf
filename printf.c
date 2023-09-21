@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -20,13 +19,13 @@ int _printf(const char *format, ...)
 		ptchr(format[i]);
 	
 	}
-	if (format[i + 1] == 'c')
+	if (format[i] == '%' && format[i + 1] == 'c')
 	{
 		ptchr(va_arg(args, int));
 			count += 1;
 	
 	}
-	else if (format[i + 1] == 's')
+	if (format[i + 1] == 's')
 	{
 		str_ct = va_arg(args, int);
 			i++;

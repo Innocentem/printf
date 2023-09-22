@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ptchr: prints character
+ * ptchr - prints character
  * @c: character to be printed
  * Return: 1
  */

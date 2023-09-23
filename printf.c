@@ -3,12 +3,10 @@
 /**
  * _printf - prints formated string to stdopt.
  * @format: format specifier
- *
- * Returns: Nmbr of bytes
+ * Return: Nmbr of bytes
  */
 
 int _printf(const char *format, ...)
-
 {
 	int i, str_ct, count = 0;
 
